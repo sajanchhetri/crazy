@@ -1,5 +1,5 @@
 #!/bin/bash
-#©This Script is made by Crazy
+#©This Script is made by Cra
 
 apt install zip && unzip #zip install
 clear
