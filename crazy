@@ -108,8 +108,8 @@ break
 echo working..
 ;;
 "Quit")
-break
 cd ~/crazy && bash crazy
+break
 ;;
     *) echo "Invalid option"
       ;;
