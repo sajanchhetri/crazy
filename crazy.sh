@@ -92,8 +92,7 @@ done
 git clone https://github.com/sajanchhetri/crazy
 cd ~/crazy && bash crazy.sh
      ;;
-  4) echo "fix error"
-   options=("storage-error" "vnc-error" "Quit")
+  4) options=("storage-error" "vnc-error" "Quit")
 echo "Please select an option:"
 PS3="Enter your choice: "
 select opt in "${options[@]}"
