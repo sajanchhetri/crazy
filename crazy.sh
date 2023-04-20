@@ -1,6 +1,6 @@
 #!/bin/bash
 #©This Script is made by Crazy
-termux-setup-storage
+
 apt install zip && unzip #zip install
 clear
 echo -e "\e[32m
