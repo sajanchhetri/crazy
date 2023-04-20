@@ -83,9 +83,8 @@ tar -zcf /sdcard/backup/termux-backup.tar.gz -C /data/data/com.termux/files ./ho
 tar -zxf /sdcard/TeraBoxDownloads/From：IN_Note1/backup/termux-backup.tar.gz -C /data/data/com.termux/files --recursive-unlink --preserve-permissions
 ;;
 "back")
-      echo "backing"
-      cd ~/crazy && bash crazy
-      break
+cd ~/crazy && bash crazy
+ exit 0
       ;;
     *) echo "Invalid option"
       ;;
@@ -111,11 +110,12 @@ cd /sdcard/android/data
 unzip com.astragon.cs3.zip
 rm -rf com.astragon.cs3.zip
 ;;
+
 "back")
-      echo "backing"
-      cd ~/crazy && bash crazy
-      break
+cd ~/crazy && bash crazy
+exit 0
       ;;
+      
     *) echo "Invalid option"
       ;;
   esac
