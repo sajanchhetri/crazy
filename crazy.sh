@@ -1,5 +1,6 @@
 #!/bin/bash
 #©This Script is made by Crazy
+termux-setup-storage
 apt install zip && unzip #zip install
 clear
 echo -e "\e[32m
@@ -92,7 +93,8 @@ done
 git clone https://github.com/sajanchhetri/crazy
 cd ~/crazy && bash crazy.sh
      ;;
-  4) options=("storage-error" "vnc-error" "Quit")
+  4) echo "fix error"
+   options=("storage-error" "vnc-error" "back")
 echo "Please select an option:"
 PS3="Enter your choice: "
 select opt in "${options[@]}"
@@ -105,6 +107,10 @@ break
 ;;
 "vnc-error")
 echo working..
+;;
+"back")
+cd ~/crazy && bash crazy.sh
+break
 ;;
     *) echo "Invalid option"
       ;;
