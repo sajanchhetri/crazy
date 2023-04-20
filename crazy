@@ -62,19 +62,64 @@ do
 done
 ;;
   2) echo "Backing up and restoring..."
-     options=("backup" "restore" "Quit")
+  cd /sdcard && mkdir backup
+     options=("termux" "games" "Quit")
 echo "Please select an option:"
 PS3="Enter your choice: "
 select opt in "${options[@]}"
 do
   case $opt in
-  "backup")
-  echo backing up.....
-  tar -zcf /sdcard/termux-backup.tar.gz -C /data/data/com.termux/files ./home ./usr
+"termux")
+options=("backup" "restore" "back")
+echo "Please select an option:"
+PS3="Enter your choice: "
+select opt in "${options[@]}"
+do
+  case $opt in
+"backup")
+tar -zcf /sdcard/backup/termux-backup.tar.gz -C /data/data/com.termux/files ./home ./usr
 ;;
 "restore")
-echo restoring.......
-tar -zxf /sdcard/termux-backup.tar.gz -C /data/data/com.termux/files --recursive-unlink --preserve-permissions
+tar -zxf /sdcard/TeraBoxDownloads/From：IN_Note1/backup/termux-backup.tar.gz -C /data/data/com.termux/files --recursive-unlink --preserve-permissions
+;;
+"back")
+      echo "backing"
+      cd ~/crazy && bash crazy
+      break
+      ;;
+    *) echo "Invalid option"
+      ;;
+  esac
+done
+;;
+"games")
+options=("backup" "restore" "back")
+echo "Please select an option:"
+PS3="Enter your choice: "
+select opt in "${options[@]}"
+do
+  case $opt in
+"backup")
+cd /sdcard/android/data
+zip -r com.astragon.cs3.zip com.astragon.cs3
+mv com.astragon.cs3.zip /sdcard/backup
+;;
+"restore")
+cd /sdcard/TeraBoxDownloads/From：IN_Note1/backup
+cp com.astragon.cs3.zip /sdcard/android/data
+cd /sdcard/android/data
+unzip com.astragon.cs3.zip
+rm -rf com.astragon.cs3.zip
+;;
+"back")
+      echo "backing"
+      cd ~/crazy && bash crazy
+      break
+      ;;
+    *) echo "Invalid option"
+      ;;
+  esac
+done
 ;;
 "Quit")
       echo "backing"
