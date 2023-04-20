@@ -1,6 +1,5 @@
-##!/bin/bash
+#!/bin/bash
 #©This Script is made by Crazy
-termux-setup-storage
 apt install zip && unzip #zip install
 clear
 echo -e "\e[32m
@@ -107,6 +106,11 @@ break
 ;;
 "vnc-error")
 echo working..
+;;
+    *) echo "Invalid option"
+      ;;
+  esac
+done
 ;;
   5) echo "Quitting..."
      exit 0
