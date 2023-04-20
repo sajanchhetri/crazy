@@ -1,6 +1,6 @@
-#!/bin/bash
-#©This Script is made by Cra
-
+##!/bin/bash
+#©This Script is made by Crazy
+termux-setup-storage
 apt install zip && unzip #zip install
 clear
 echo -e "\e[32m
@@ -94,8 +94,20 @@ git clone https://github.com/sajanchhetri/crazy
 cd ~/crazy && bash crazy.sh
      ;;
   4) echo "fix error"
-     # add your commands to upgrade script here
-     ;;
+   options=("storage-error" "vnc-error" "Quit")
+echo "Please select an option:"
+PS3="Enter your choice: "
+select opt in "${options[@]}"
+do
+  case $opt in
+ "storage-error")
+ termux-setup-storage
+cd ~/crazy && bash crazy.sh
+break
+;;
+"vnc-error")
+echo working..
+;;
   5) echo "Quitting..."
      exit 0
      ;;
