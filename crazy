@@ -1,5 +1,6 @@
 #!/bin/bash
 #©This Script is made by Crazy
+apt upgrade -y #update termux
 apt install zip && unzip #zip install
 clear
 echo -e "\e[32m
