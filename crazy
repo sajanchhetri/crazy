@@ -50,7 +50,7 @@ select opt in "${options[@]}"
 do
   case $opt in
     "xfce")
-    
+    cd
 termux-setup-storage
 
 pkg install root-repo x11-repo
