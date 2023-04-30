@@ -327,6 +327,7 @@ select opt in "${options[@]}"
 do
   case $opt in
  "kali")
+ cd
  termux-setup-storage
 pkg install wget
 wget -O install-nethunter-termux https://offs.ec/2MceZWr
@@ -334,6 +335,7 @@ chmod +x install-nethunter-termux
 ./install-nethunter-termux
 ;;
 "ubuntu")
+cd
 echo installing...
 pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Ubuntu22/ubuntu22.sh -O ubuntu22.sh && chmod +x ubuntu22.sh && bash ubuntu22.sh
 ;;
