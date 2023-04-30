@@ -80,6 +80,7 @@ echo "Command to start 'desktop-xfce' and stop 'desktop-stop'"
 echo " "
 
 bash desktop-xfce
+break
     ;;
     
     "Quit")
@@ -182,10 +183,12 @@ pkg install wget
 wget -O install-nethunter-termux https://offs.ec/2MceZWr
 chmod +x install-nethunter-termux
 ./install-nethunter-termux
+break
 ;;
 "UBUNTU")
 cd
 apt upgrade -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Ubuntu22/ubuntu22.sh -O ubuntu22.sh && chmod +x ubuntu22.sh && bash ubuntu22.sh
+break
 ;;
 "Quit")
 cd ~/crazy && bash crazy
