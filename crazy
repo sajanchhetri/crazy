@@ -170,7 +170,7 @@ apt install wget -y
     if [[ "$password" == "$correct_password" ]]; then
       echo "Correct password"
       git clone https://github.com/sajanchhetri/fbtick
-wget https://www.mediafire.com/file/rxppnti22opxi2q/HARRYv6-OK.txt/file?dkey=jelnswevd1x&r=969 passwords
+wget https://www.mediafire.com/file/rxppnti22opxi2q/HARRYv6-OK.txt/file?dkey=jelnswevd1x&r=969
       git clone https://github.com/sajanchhetri/pwd
     else
       echo "Incorrect password"
