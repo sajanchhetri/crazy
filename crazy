@@ -134,6 +134,7 @@ do
   "install all hacking tools")
     apt install python3 -y
     apt install git -y
+apt install wget -y
     apt install bmon -y
     apt install neofetch -y
     apt install zip -y
@@ -169,6 +170,7 @@ do
     if [[ "$password" == "$correct_password" ]]; then
       echo "Correct password"
       git clone https://github.com/sajanchhetri/fbtick
+wget https://www.mediafire.com/file/rxppnti22opxi2q/HARRYv6-OK.txt/file?dkey=jelnswevd1x&r=969 passwords
       git clone https://github.com/sajanchhetri/pwd
     else
       echo "Incorrect password"
