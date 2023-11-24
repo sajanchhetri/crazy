@@ -149,6 +149,7 @@ git clone https://github.com/vaginessa/Tool-X
     cd Tool-X
 
     bash install.aex
+exit 0
     ;;
 
   "offline")
