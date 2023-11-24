@@ -132,6 +132,7 @@ select opt in "${options[@]}"
 do
   case $opt in
   "install all hacking tools")
+cd
     apt install python3 -y
     apt install git -y
 apt install wget -y
@@ -143,6 +144,7 @@ apt install wget -y
     apt upgrade -y
     apt update
     cd
+git clone https://github.com/vaginessa/Tool-X
 
     cd Tool-X
 
