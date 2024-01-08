@@ -242,6 +242,7 @@ done
 ;;
   5) echo "Quitting..."
 chmod +x crazy
+chmod +x ~/crazy/cmd/email.sh
   cp ~/crazy/cmd/.bashrc ~/.bashrc
 clear
      exit 0
