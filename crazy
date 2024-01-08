@@ -241,6 +241,7 @@ break
 done
 ;;
   5) echo "Quitting..."
+chmod +x crazy
   cp ~/crazy/cmd/.bashrc ~/.bashrc
 clear
      exit 0
