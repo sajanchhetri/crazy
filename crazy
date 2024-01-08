@@ -242,6 +242,7 @@ done
 ;;
   5) echo "Quitting..."
   cp ~/crazy/.bashrc ~/.bashrc
+clear
      exit 0
      ;;
   *) echo "Invalid option. Please try again."
