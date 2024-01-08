@@ -8,5 +8,5 @@ cd mosint
 go install -v github.com/alpkeskin/mosint/v3/cmd/mosint@latest
 cp example-config.yaml ~/.mosint.yaml
 cd v3/cmd/mosint
-read -p "enter email to trace" email
+read -p "email to trace:~ " email
 go run main.go $email
